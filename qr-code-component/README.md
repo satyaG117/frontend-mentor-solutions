@@ -21,8 +21,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![desktop](./screenshots/desktop.png)
-![mobile](./screenshots/mobile.png)
+![](./screenshots/desktop.png)
+![](./screenshots/mobile.png)
 
 ### Links
 
