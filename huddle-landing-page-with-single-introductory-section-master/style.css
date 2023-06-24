@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --mobile: 375px;
+    --desktop: 1440px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--violet);
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+
+}
+
+.logo {
+    width: 15rem;
+}
+
+.navbar {
+    padding: 1.5rem;
+}
+
+.main-grid {
+    padding: 1.2rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mockup-section {
+    flex-basis: 55%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mockup-section img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.description {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.text-section {
+    flex-basis: 44%;
+    padding: 1.75rem 1rem;
+}
+
+.register-btn {
+    width: 10rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    border: none;
+    padding: 0.75rem 2rem;
+    background-color: white;
+    color: var(--violet);
+    border-radius: 33px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: var(--soft-magenta);
+}
+
+.social-icons-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    margin: 0.2rem 1.5rem;
+}
+
+
+@media (max-width: 450px) {
+    .logo {
+        width: 10rem;
+    }
+
+    body {
+        background-image: url('./images/bg-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .main-grid {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0.2rem;
+        text-align: center;
+    }
+
+    .text-section {
+        padding: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.75rem;
+    }
+
+    .footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .social-icons-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
